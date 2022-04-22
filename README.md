@@ -1,7 +1,7 @@
 CPUMiner-Multi
 ==============
 
-This is a multi-threaded CPU miner for STB.
+This is a multi-threaded CPU miner for STB HG680P.
 
 It's a fork of [tpruvot](//github.com/tpruvot/)'s cpuminer, in turn forked from [pooler](//github.com/pooler)'s miner. 
 
