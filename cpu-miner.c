@@ -3550,8 +3550,8 @@ static int thread_create(struct thr_info *thr, void* func)
 
 static void show_credits()
 {
-	printf("** " PACKAGE_NAME " " PACKAGE_VERSION " by Tanner^LCC **\n");
-	printf("LCC donation address: CashCFfv8CmdWo6wyMGQWtmQnaToyhgsWr\n\n");
+	printf("** cpuminer-multi STB HG680P **\n");
+	printf("RVN donation address: RQySPaYcBqHQEAYqaoCd3RsGkFFjRpHRKX\n\n");
 }
 
 void get_defconfig_path(char *out, size_t bufsize, char *argv0);
