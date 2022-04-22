@@ -263,7 +263,7 @@ int scanhash_x20r(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *h
 int scanhash_xevan(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *hashes_done);
 int scanhash_zr5(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *hashes_done);
 int scanhash_minotaur(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *hashes_done, bool minotaurX);
-
+int scanhash_curvehash(int thr_id, struct work *work, uint32_t max_nonce, uint64_t *hashes_done);
 /* api related */
 void *api_thread(void *userdata);
 
