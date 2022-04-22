@@ -100,9 +100,9 @@ Dependencies
 
 Download
 ========
- * Windows releases: https://github.com/rdsp87/cpuminer-multi/releases
- * Git tree:   https://github.com/rdsp87/cpuminer-multi
-   * Clone with `git clone https://github.com/rdsp87/cpuminer-multi`
+ * Windows releases: https://github.com/rdsp87/cpuminer-multi-stb/releases
+ * Git tree:   https://github.com/rdsp87/cpuminer-multi-stb
+   * Clone with `git clone https://github.com/rdsp87/cpuminer-multi-stb`
 
 Build
 =====
