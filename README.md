@@ -22,7 +22,7 @@ Algorithms
 ==========
 #### The main show
  * ✓ __minotaur__ Minotaur (Ring [RNG])
- * ✓ __minotaurx__ MinotaurX (Litecoin Cash [LCC], Ring [RNG])
+ * ✓ __minotaurx__ MinotaurX (Litecoin Cash [LCC], Ring [RNG], Avian [AVN])
  * ✓ __curvehash__ (PulsarCoin, Curvehash)
 
 #### Others currently supported
