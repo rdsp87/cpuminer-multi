@@ -93,6 +93,7 @@ enum algos {
     ALGO_C11,         /* C11 Chaincoin/Flaxcoin X11 variant */
 	ALGO_CRYPTOLIGHT, /* cryptonight-light (Aeon) */
 	ALGO_CRYPTONIGHT, /* CryptoNight */
+	ALGO_CURVEHASH,
 	ALGO_DECRED,      /* Decred */
 	ALGO_DMD_GR,      /* Diamond */
 	ALGO_DROP,        /* Dropcoin */
@@ -162,6 +163,7 @@ static const char *algo_names[] = {
 	"c11",
 	"cryptolight",
 	"cryptonight",
+	"curvehash",
 	"decred",
 	"dmd-gr",
 	"drop",
@@ -327,6 +329,7 @@ Options:\n\
                           c11/flax     C11\n\
                           cryptolight  Cryptonight-light\n\
                           cryptonight  Monero\n\
+			  curvehash    curveHash\n\
                           decred       Blake-256 14-rounds 180 bytes\n\
                           dmd-gr       Diamond-Groestl\n\
                           drop         Dropcoin\n\
@@ -2564,6 +2567,9 @@ static void *miner_thread(void *userdata)
 			break;
 		case ALGO_ZR5:
 			rc = scanhash_zr5(thr_id, &work, max_nonce, &hashes_done);
+			break;
+		case ALGO_CURVEHASH:
+			rc = scanhash_curvehash(thr_id, &work, max_nonce, &hashes_done);
 			break;
 		default:
 			/* should never happen */
