@@ -23,6 +23,7 @@ Algorithms
 #### The main show
  * ✓ __minotaur__ Minotaur (Ring [RNG])
  * ✓ __minotaurx__ MinotaurX (Litecoin Cash [LCC], Ring [RNG])
+ * ✓ __curvehash__ (PulsarCoin, Curvehash)
 
 #### Others currently supported
  * ✓ __scrypt__ (Litecoin, Dogecoin, Feathercoin, ...)
@@ -99,9 +100,9 @@ Dependencies
 
 Download
 ========
- * Windows releases: https://github.com/litecoincash-project/cpuminer-multi/releases
- * Git tree:   https://github.com/litecoincash-project/cpuminer-multi
-   * Clone with `git clone https://github.com/litecoincash-project/cpuminer-multi`
+ * Windows releases: https://github.com/rdsp87/cpuminer-multi/releases
+ * Git tree:   https://github.com/rdsp87/cpuminer-multi
+   * Clone with `git clone https://github.com/rdsp87/cpuminer-multi`
 
 Build
 =====
