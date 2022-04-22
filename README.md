@@ -1,4 +1,4 @@
-CPUMiner-Multi
+CPUMiner-Multi-STB
 ==============
 
 This is a multi-threaded CPU miner for STB HG680P.
