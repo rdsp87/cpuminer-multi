@@ -7,9 +7,9 @@ endif
 
 EXTRA_DIST	= cpuminer-conf.json nomacro.pl
 
-SUBDIRS		= compat
+SUBDIRS		= secp256k1 compat
 
-ALL_INCLUDES	= @PTHREAD_FLAGS@ -fno-strict-aliasing $(JANSSON_INCLUDES) -I.
+ALL_INCLUDES	= @PTHREAD_FLAGS@ -fno-strict-aliasing $(JANSSON_INCLUDES) -I$(top_srcdir)/secp256k1/include -I.
 
 bin_PROGRAMS	= cpuminer
 
@@ -138,9 +138,12 @@ endif
 if HAVE_WINDOWS
    cpuminer_SOURCES += compat/winansi.c
 endif
+LIBSECP256K1=secp256k1/libsecp256k1.la
+$(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C $(@D) $(@F)
 
 cpuminer_LDFLAGS	= @LDFLAGS@
-cpuminer_LDADD	= @LIBCURL@ @JANSSON_LIBS@ @PTHREAD_LIBS@ @WS2_LIBS@
+cpuminer_LDADD	= @LIBCURL@ @JANSSON_LIBS@ @PTHREAD_LIBS@ @WS2_LIBS@ $(LIBSECP256K1)
 cpuminer_CPPFLAGS = @LIBCURL_CPPFLAGS@ $(ALL_INCLUDES)
 cpuminer_CFLAGS   = -Wno-pointer-sign -Wno-pointer-to-int-cast $(disable_flags)
 
