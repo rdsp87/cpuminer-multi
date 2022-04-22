@@ -1,7 +1,7 @@
 CPUMiner-Multi
 ==============
 
-This is a multi-threaded CPU miner for Minotaur and MinotaurX. It supports SegWit.
+This is a multi-threaded CPU miner for STB.
 
 It's a fork of [tpruvot](//github.com/tpruvot/)'s cpuminer, in turn forked from [pooler](//github.com/pooler)'s miner. 
 
