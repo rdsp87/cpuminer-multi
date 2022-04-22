@@ -141,7 +141,7 @@ if test x$request_jansson = xtrue ; then
 else
 	JANSSON_LIBS=-ljansson
 fi
-
+SECP256K1_LIBS=-llibsecp256k1
 # libcurl install path (for mingw : --with-curl=/usr/local)
 AC_ARG_WITH([curl],
    [  --with-curl=PATH         prefix where curl is installed [default=/usr]])
